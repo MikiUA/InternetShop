@@ -1,0 +1,155 @@
+div{box-sizing: border-box;}
+a{color: inherit; text-decoration: none;}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vw;
+    width: 100vw;
+}
+
+
+.mos_title{
+    background-color: #bdf;
+    display: flex;
+
+    width: fit-content;
+    height: 1.2em;
+    
+}
+.title_item{
+    white-space: nowrap;
+    border: 1px solid blue;
+    padding: 0 1em;
+    
+}
+.title_item:hover{
+    background-color: #8af;
+}
+
+
+.global_container_box{    
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    min-width: 28em;
+    height: fit-content;
+    /* min-height: calc(100vh - 2em); */
+    /* min-height: 15em; */
+    background-color: #def;
+    /* padding: 2px; */
+}
+
+
+.shop_list_bar{
+width:25%;
+border: 1px solid black;
+padding: 2px;
+text-align: center;
+}
+.shop_container{
+        text-align: center;
+        width: 80%;
+        min-width: 6em;
+        margin: 1em auto 0;
+        background-color: #e0efff;
+    border: 1px solid blue;
+}
+.shop_container:hover{
+    background-color: #a0cdff;
+}
+.shop_container.active_shop{
+background-color: #6af;
+}
+
+
+.item_list_bar{
+width: 75%;
+border: 1px solid black;
+position: relative;
+text-align: center;
+}
+.item_list_title{
+    display: block;
+    height: 1.2em;
+border-bottom: 1px solid black;
+}
+.item_list_main{
+    position: relative;
+    /* display: inline-block; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.item_list_finish{
+    position:absolute;
+    height: 1.2em;
+    bottom: 1px;
+    background-color: aqua;
+    display: flex;
+}
+
+
+
+
+.item_container{
+    position:relative;
+width: 14em;
+height: 13em;
+border: 1px solid blue;
+margin : 2em;
+
+/* display: -ms-inline-grid; */
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-rows: 7em 3em 3em;
+text-align: center;
+}
+.item_image{
+    height: 90%;
+    width: 90%;
+    margin: 2px;
+    border: 0.1px solid red;
+}
+.item_name{
+    font-weight: bold;
+    display: inline;
+    margin: 2px;
+}
+.item_cost{
+    margin: 2px;
+    padding: 0.2em;
+    margin: 2px;
+}
+.item_quantity{
+    margin: 2px;
+    padding: 0.2em;
+}
+.order_btn_wrap{
+    margin: auto 2em;
+    display: flex;
+    text-align: center;
+}
+.order_btn{
+    width: 5em;
+}
+.order_amount{width: 3em;
+text-align: right;}
+.order_plus{width: 1.5em;}
+.order_minus{width: 1.5em;}
+/* .user_info_bar{
+width:25%;
+min-width: 20em;
+border: 1px solid black;
+} */
+
+.login_label{
+    display: block;
+    height:2.4em;
+    width: 90%;
+    margin: 1.5em auto;
+
+    /* border: 1px solid black; */
+}
+.login_input{
+    width: 70%;
+    max-width: 15em;
+}

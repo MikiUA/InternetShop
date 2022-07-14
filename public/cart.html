@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping cart</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body onload="initialize()">
+    <div id="mos_title"></div>
+    <div class="global_container_box">
+         <aside id="login_form" class="shop_list_bar">
+            <label class="login_label">Name: <input class="login_input"></label>
+            <label class="login_label">Email: <input class="login_input"></label>
+            <label class="login_label">Phone: <input class="login_input"></label>
+            <label class="login_label">Address: <input class="login_input"></label>
+         </aside>
+         <div  class="item_list_bar">
+            <div class="item_list_title">
+                Items List
+            </div>  
+            <div id="item_list_bar" class="item_list_main">
+
+            </div>       
+            <div class="item_list_finish">
+                <button onclick="SubmitOrder()">Finish and send order request</button>
+                <div id="total_cost">0$</div>
+             </div>
+         </div>
+     </div> 
+     <script type="text/javascript" src="script/title.js"></script>
+     <script type="text/javascript" src="socket.io/socket.io.js"></script>
+     <script type="text/javascript" src="script/ClientCart.js"></script>
+</body>
+</html>
